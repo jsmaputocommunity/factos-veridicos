@@ -2,6 +2,7 @@ import React from 'react';
 import Mostrar from './Mostrar';
 import Registar from './Registar';
 
+
 const Centro = () => {
 
     const toggleModal = (modal) => {
@@ -49,6 +50,7 @@ const Centro = () => {
     return (
         <div>
             <div id="centerDiv">
+                <img id="logo" alt={'logo'} src={require('../assets/images/logo-slider.jpg')}/>
                 <h2 style={{ textAlign: "center" }}>Factos Verídicos</h2>
                 <button id="showModalBtn" className="btn-show" onClick={() => { callModal1() }}>Mostrar</button>
                 <button id="addModalBtn" className="btn-show" onClick={() => { callModal2() }}>Adicionar</button>
